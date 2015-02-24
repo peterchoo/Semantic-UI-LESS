@@ -8,22 +8,22 @@
     Default Theme
 -------------------*/
 
-@import "@{themesFolder}/default/globals/site.variables";
-@import "@{themesFolder}/default/@{type}s/@{element}.variables";
+@import "@{themesFolder}/default/globals/site.variables.import.less";
+@import "@{themesFolder}/default/@{type}s/@{element}.variables.import.less";
 
 /*------------------
    Packaged Theme
 -------------------*/
 
-@import "@{themesFolder}/@{site}/globals/site.variables";
-@import "@{themesFolder}/@{theme}/@{type}s/@{element}.variables";
+@import "@{themesFolder}/@{site}/globals/site.variables.import.less";
+@import "@{themesFolder}/@{theme}/@{type}s/@{element}.variables.import.less";
 
 /*------------------
      Site Theme
 -------------------*/
 
-@import "@{siteFolder}/globals/site.variables";
-@import "@{siteFolder}/@{type}s/@{element}.variables";
+@import "@{siteFolder}/globals/site.variables.import.less";
+@import "@{siteFolder}/@{type}s/@{element}.variables.import.less";
 
 
 /*******************************
@@ -43,6 +43,6 @@
 -------------------*/
 
 .loadUIOverrides() {
-  @import "@{themesFolder}/@{theme}/@{type}s/@{element}.overrides";
-  @import "@{siteFolder}/@{type}s/@{element}.overrides";
+  @import "@{themesFolder}/@{theme}/@{type}s/@{element}.overrides.import.less";
+  @import "@{siteFolder}/@{type}s/@{element}.overrides.import.less";
 }
